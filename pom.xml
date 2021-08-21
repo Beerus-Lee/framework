@@ -11,6 +11,7 @@
     <modules>
         <module>spring-framework</module>
         <module>java-base</module>
+        <module>arithmetic</module>
     </modules>
 
     <properties>
