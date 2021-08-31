@@ -1,18 +1,28 @@
 package demo;
 
-import com.alibaba.fastjson.JSONObject;
 
-import java.util.Set;
+import java.util.*;
 
 public class TestDemo {
     public static void main(String[] args) {
-        String str = "{\"bussDatas\":\"111\"}\n";
-        JSONObject jsonObject = JSONObject.parseObject(str);
-        // 获取JSON第一层所有的key
-        Set<String> keys = jsonObject.keySet();
-        // 获取第一层每个key对应的值 的类型
-        for (String key : keys) {
-            System.out.println(String.format("%s(key)：%s(值类型)", key, jsonObject.get(key).getClass().getSimpleName()));
-        }
+       List<String> a = new ArrayList<>();
+       a.add(0,"1");
+       a.add(0,"2");
+        System.out.println(a);
+        Map<Integer,String> map = new HashMap<>();
+        String b ="aaa";
+        System.out.println(b.substring(0,b.length() - 1));
+        Map<String,String> digitsMap = new HashMap<>();
+        digitsMap.put("2","abc");
+        int[] array =  {1,2,3};
+        ListNode listNode = InitListNode.init(array);
+        Queue<ListNode> queue = new LinkedList<>();
+        queue.offer(listNode);
+        System.out.println(queue.size());
+        queue.poll();
+        System.out.println(queue.size());
+        StringBuilder sb = new StringBuilder("addd");
+
+
     }
 }
