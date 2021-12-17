@@ -22,6 +22,7 @@ public class TestDemo {
         queue.poll();
         System.out.println(queue.size());
         StringBuilder sb = new StringBuilder("addd");
+        Long num= 1L;
 
 
     }
