@@ -15,6 +15,8 @@ public class InitListNode {
         }
         ListNode node = new ListNode(arr[i],putValue(++i));
 
+
+
          return node;
     }
 }
